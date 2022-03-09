@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+    text-align: center;
+    font-family: Verdana;
+    font-weight: 700;
+}
+p{
+color: #6d6d66;
+font-family: verdana;
+text-align: left;
+}
+
+ul li{
+    color: #6d6d66;
+    font-family: verdana;
+    text-align: left;
+}
