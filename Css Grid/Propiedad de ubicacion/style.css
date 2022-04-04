@@ -1,0 +1,230 @@
+.container{
+    border:5px solid cornflowerblue;
+    background-color: rgb(196, 217, 255);
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
+}
+
+.item{
+    font-size: 25px;
+}
+
+.item-1{
+    border: 2px solid blue;
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 4 ;
+}
+
+.item-2{
+    border: 2px solid rgb(255, 0, 157);
+    background-color: rgb(250, 125, 183);
+    grid-row: 2 / 4;
+}
+
+.item-3{
+    border: 2px solid rgb(255, 238, 0);
+    background-color: rgb(255, 242, 169);
+    grid-area: 2 / 2 / 4 / 4;
+}
+
+
+/*GRID AREAS*/ 
+.contain{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+    place-content: center;
+    grid-template-areas: 
+    "header main main"
+    "side side div"
+    "item1 item2 item3";
+}
+
+
+.grid{
+    font-size: 25px;
+}
+
+.grilla1{
+    border: 2px solid blue;
+    border-radius: 7px;
+    background-color: aqua;
+    /* grid-column: 1 / 1; */
+    grid-area: header;
+    margin: 5px;
+}
+
+.grilla2{
+    border: 2px solid rgb(255, 0, 157);
+    border-radius: 7px;
+    background-color: rgb(250, 125, 183);
+    /* grid-column: 2 / 4; */
+    grid-area: main;
+    margin: 5px;
+}
+
+.grilla3{
+    border: 2px solid rgb(255, 238, 0);
+    border-radius: 7px;
+    background-color: rgb(255, 242, 169);
+    /* grid-area: 2 / 1 / 2 / 3; */
+    grid-area: side;
+    margin: 5px;
+}
+
+.grilla4{
+    border: 2px solid rgb(0, 255, 85);
+    border-radius: 7px;
+    background-color: rgb(216, 253, 221);
+    margin: 5px;
+    grid-area: div;
+}
+
+.grilla5{
+    border: 2px solid rgb(255, 166, 0);
+    border-radius: 7px;
+    background-color: rgb(255, 203, 169);
+    margin: 5px;
+    grid-area: item1;
+}
+
+.grilla6{
+    border: 2px solid rgb(255, 0, 21);
+    border-radius: 7px;
+    background-color: rgb(255, 169, 169);
+    margin: 5px;
+    grid-area: item2;
+}
+
+.grilla7{
+    border: 2px solid rgb(234, 0, 255);
+    border-radius: 7px;
+    background-color: rgb(255, 169, 251);
+    margin: 5px;
+    grid-area: item3;
+}
+
+/*GRID FUNCIONES ESPECIALES*/ 
+.contenedor{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: minmax(30px,250px) 250px minmax(30px,250px);
+    grid-template-rows: repeat(3, auto);
+    place-content: center;
+    grid-template-areas: 
+    "header main main"
+    "side side div"
+    "item1 item2 item3";
+}
+
+.celdas{
+    font-size: 25px;
+}
+
+.celda1{
+    border: 2px solid blue;
+    border-radius: 7px;
+    background-color: aqua;
+    /* grid-column: 1 / 1; */
+    grid-area: header;
+    margin: 5px;
+}
+
+.celda2{
+    border: 2px solid rgb(255, 0, 157);
+    border-radius: 7px;
+    background-color: rgb(250, 125, 183);
+    /* grid-column: 2 / 4; */
+    grid-area: main;
+    margin: 5px;
+}
+
+.celda3{
+    border: 2px solid rgb(255, 238, 0);
+    border-radius: 7px;
+    background-color: rgb(255, 242, 169);
+    /* grid-area: 2 / 1 / 2 / 3; */
+    grid-area: side;
+    margin: 5px;
+}
+
+.celda4{
+    border: 2px solid rgb(0, 255, 85);
+    border-radius: 7px;
+    background-color: rgb(216, 253, 221);
+    margin: 5px;
+    grid-area: div;
+}
+
+.celda5{
+    border: 2px solid rgb(255, 166, 0);
+    border-radius: 7px;
+    background-color: rgb(255, 203, 169);
+    margin: 5px;
+    grid-area: item1;
+}
+
+.celda6{
+    border: 2px solid rgb(255, 0, 21);
+    border-radius: 7px;
+    background-color: rgb(255, 169, 169);
+    margin: 5px;
+    grid-area: item2;
+}
+
+.celda7{
+    border: 2px solid rgb(234, 0, 255);
+    border-radius: 7px;
+    background-color: rgb(255, 169, 251);
+    margin: 5px;
+    grid-area: item3;
+}
+
+/*GRID KEYWORDS ESPECIALES*/
+
+/*FRACCIÓN fr*/
+.seccion{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    place-content: center;}
+
+    .campos{
+    font-size: 25px;
+    }
+
+    .campo1{
+        border: 2px solid blue;
+        background-color: aqua;
+    }
+    
+    .campo2{
+        border: 2px solid rgb(255, 0, 157);
+        background-color: rgb(250, 125, 183);
+    }
+    
+    .campo3{
+        border: 2px solid rgb(255, 238, 0);
+        background-color: rgb(255, 242, 169);
+    }
+
+    
+    .campo4{
+        border: 2px solid blue;
+        background-color: aqua;
+    }
+    
+    .campo5{
+        border: 2px solid rgb(255, 0, 157);
+        background-color: rgb(250, 125, 183);
+    }
+    
+    .campo6{
+        border: 2px solid rgb(255, 238, 0);
+        background-color: rgb(255, 242, 169);
+    }

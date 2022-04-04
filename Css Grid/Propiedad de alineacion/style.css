@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 100px 100px; /*indicamos cuántas columnas queremos tener*/
+    grid-template-rows: 100px 100px 100px; /*indica el alto de cada fila establecida por defecto en la columna*/
+    grid-auto-flow: column;
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    gap: 20px;
+    place-content: end;
+    
+}
+
+div .item-1{
+    background-color: rgb(30, 252, 30);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+}
+
+.text-1{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(23, 211, 23);
+    width: 25px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;        
+}
+div .item-2{
+    background-color: rgb(23, 240, 23);  
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;  
+}
+
+.text-2{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(19, 170, 19);
+    width: 25px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+div .item-3{
+    background-color: rgb(20, 206, 20);   
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.text-3{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(19, 170, 19);
+    width: 25px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+div .item-4{
+    background-color: rgb(30, 252, 30);  
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end
+}
+
+.text-4{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(23, 211, 23);
+    width: 25px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+div .item-5{
+    background-color: rgb(23, 240, 23);   
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end
+}
+
+.text-5{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(19, 170, 19);
+    width: 25px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+div .item-6{
+    background-color: rgb(20, 206, 20);   
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end
+}
+
+.text-6{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(19, 170, 19);
+    width: 25px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}

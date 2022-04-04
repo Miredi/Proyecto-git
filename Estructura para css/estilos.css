@@ -1,0 +1,45 @@
+/* El root se utiliza para reutilizar código y se llama con var()*/
+:root{
+    --ancho-pantalla: 100vw;
+    --color-primario:#003478;
+    --color-secundario:#003897;
+    --titulo: 4rem;
+    }
+/*Es un estilo universal, se recomienda usarlo para que no afecte a los estilos que nosotros declaremos*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Se puede establecer un % para utilizar medidas REM, así con este porcentaje que equivale a 10px, se puede hacer un mejor cálculo de la medida de las fuentes*/
+html{
+    font-size: 62.5%;
+    /*Para cambiar una fuente que proviene de la web, se copia este código para establecer que si el navegador desde donde se está viendo la página, no tiene la fuente roboto, te mostrará sans-serif*/
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Ejemplo de estilo para un header*/
+header{
+    width:100vw;
+    height: 15vh;
+    background-color: var(--color-primario)
+    }
+
+main{
+    width: 100vw;
+    height: 70vh;
+    }    
+
+h1{
+    font-size:var(--titulo)
+}
+
+p{
+    font-size:2rem
+}
+footer{
+    width:100vw;
+    height: 15vh;
+    background-color: var(--secundario);
+    }

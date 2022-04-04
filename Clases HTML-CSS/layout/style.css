@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* HEADER */
+header{
+    background-color: rgb(212, 36, 36);
+    padding: 0 25px;
+    height: 8%;
+}
+
+.nav{
+   text-align: right;
+    padding: 15px 0;
+}
+
+.listas{
+    display: inline;
+    padding: 0 10px;
+}
+
+.listas a:hover{
+    color: rosybrown;
+}
+
+.listas a:active{
+    color: rgb(247, 88, 127);
+}
+
+.ancor{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CUERPO */
+main{
+    height: 72%;
+}
+.section-padre{
+    display: inline-block;
+    background-color: #fff(255, 255, 255, 0.932);
+    height: 100%;
+    display: flex;
+}
+
+    /* ARTICLE */
+
+article{
+    background-color: rgb(250, 250, 250);
+    padding: 10px;
+    width: 25%;
+    height: 100%;
+}
+.bloque-principal{
+    /* margin:auto; */
+}
+
+.bloque{
+    background-color: rgb(228, 37, 37);
+    color: #fff;
+    min-width: 150px;
+    max-width: 250px;
+    border-radius: 7px;
+    padding:30px 20px;
+    margin: 20px auto;
+    text-align: center;
+   
+}
+
+/* BLOQUE 2 */
+.parrafo{
+    padding: 10px;
+    width:75%;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: rgb(212, 36, 36);
+    padding: 7px 25px;
+    height: 20%;
+}
+
+.nav-inf{
+    text-align: right;
+     padding: 15px 0;
+ }
+
+.menu{
+        display: inline;
+        padding: 0 10px;
+}
+
+.social{
+    color: #fff;
+    text-decoration: none;
+}
+
+
