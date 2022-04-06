@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*CONTAINER*/
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+    /*BLOQUE 1*/
+.hero{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows:550px;
+    border-bottom:2px solid  #e4e4e4;
+}
+    /*IMAGEN*/
+.hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /*Propiedad que hace que la imagen ocupe el espacio establecido en el contenedor y se vea completa, no se verán distorcionadas ni faltará parte de la imagen*/
+}
+
+    /*INFORMACIÓN*/
+.hero-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title{
+    color:#333;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 24px;
+}
+
+.subtitle{
+    color:#333;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+button{
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    background-color: #fb8c00;
+    font-weight: bolder;
+    padding: 12px 24px;
+}
+
+/*BLOQUE 2*/
+
+.dishes{
+    margin: 50px 0;
+}
+.dishes-title{
+    margin-bottom: 50px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dishes-grid{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-auto-rows: 1fr;
+    gap:25px;
+}
+
+.dishes-item{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*cubre todas las celdas donde están pintadas*/
+}
+
+.dishes-item-big{
+    grid-area:1 / 1/ 3/ 3;
+}
+
+/*BLOQUE 3*/
+
+.menu{
+    margin-bottom: 50px;
+}
+.menu-title{
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 50px;
+
+}
+
+.menu-grid-item{
+    display: grid;
+    gap: 25px;
+    justify-content: center;
+    grid-template-columns: repeat(5, minmax(100px, 250px));
+  }
+
+.menu-img{
+    width: 100%;
+    height: 100%;
+    background-color: coral;
+    padding: 15px;
+    border-top-left-radius: 50px;
+    cursor: pointer;   
+
+}
